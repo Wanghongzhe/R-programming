@@ -1,25 +1,6 @@
 # R-programming
 
 
-1
-0
-
-    83,837
-
-xiangxing98/ProgrammingAssignment2 forked from rdpeng/ProgrammingAssignment2
-Code
-Pull requests 0
-Wiki
-Pulse
-Graphs
-ProgrammingAssignment2/README.md
-7f657dd on 22 Apr 2014
-@rdpeng rdpeng More typos
-@rdpeng
-@gustavdelius
-106 lines (86 sloc) 4.11 KB
-Introduction
-
 This second programming assignment will require you to write an R function that is able to cache potentially time-consuming computations. For example, taking the mean of a numeric vector is typically a fast operation. However, for a very long vector, it may take too long to compute the mean, especially if it has to be computed repeatedly (e.g. in a loop). If the contents of a vector are not changing, it may make sense to cache the value of the mean so that when we need it again, it can be looked up in the cache rather than recomputed. In this Programming Assignment you will take advantage of the scoping rules of the R language and how they can be manipulated to preserve state inside of an R object.
 Example: Caching the Mean of a Vector
 
